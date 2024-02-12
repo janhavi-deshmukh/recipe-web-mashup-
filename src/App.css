@@ -1,38 +1,145 @@
-.App {
+/* App.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #141313;
+  color: #fff;
+}
+
+.header {
+  
   text-align: center;
+  padding: 100px 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.overlay {
+  /* background: url('./hero.avif') center/cover no-repeat; */
+  height: 400px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./hero.avif') center/cover no-repeat;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  font-size: 5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+span {
+  font-size: 2.5rem;
+  
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 700px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 30px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 25px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3369ff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 150px;
+}
+
+button:hover {
+  background-color: #FF8142;
+}
+
+.recipe-list ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+}
+
+.recipe-button {
+  background-color: #fcf9f9;
+  color: #000000;
+ 
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  height: 600px;
+  width: 400px;
   display: flex;
   flex-direction: column;
+}
+
+.recipe-button:hover {
+  background-color: #eaa785;
+}
+
+.recipe-image-app img {
+  width: 350px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.recipe-label {
+  font-size: 1.8rem;
+  font-weight: bolder;
+  margin-top: 10px;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgb(66, 65, 65);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.recipe-info {
+  margin-top: 10px;
+  padding: 20px;
+  color: #f16c20;
+  font-size: 1em;
+}
+
+.recipe-details h2 {
+  font-size: 2rem;
+}
+
+.recipe-details p {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.recipe-details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.recipe-details ul li {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.recipe-details h3 {
+  font-size: 1.5rem;
+  margin-top: 20px;
 }
